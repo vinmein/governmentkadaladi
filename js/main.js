@@ -91,10 +91,11 @@
             });
         }
 
-        $(window).load(function(){
-            initCarousel();
-        });
+        $(window).on('load',function(){
 
+initCarousel();
+
+        });
         $(window).resize(function () {
             $carousel.each(function() {
                 var $this = $(this);
